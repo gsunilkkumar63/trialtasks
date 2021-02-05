@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building.third job.'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing.third job.'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying.third job...'
+            }
+        }
+    }
+}
